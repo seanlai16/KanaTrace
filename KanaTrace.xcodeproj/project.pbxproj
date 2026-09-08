@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D4A3ED4D62D77C608540081 /* ChartPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C87DA0A224F65B24FCA8BA /* ChartPickerView.swift */; };
+		31AC60DAB28F3BC7ED5C1013 /* PracticeSessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2B82A2D879FC001673109E /* PracticeSessionViewModel.swift */; };
+		36754D45B738C5DBB0A0A4FA /* HapticTriggering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C40A9D01AFC99C4D7DBD727 /* HapticTriggering.swift */; };
+		383D718A7593F714502D6E98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 640B9F89EDFA120378F3CD8D /* Assets.xcassets */; };
+		54328EB0D62C1FC164828E2B /* HiraganaStrokes.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F6DA3E8D66C245FCF000156 /* HiraganaStrokes.json */; };
+		547CB8EC6730A3A8D94089CB /* WritingCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFBFD366C365D7CC80FE103 /* WritingCanvas.swift */; };
+		9722B6972742AF03AE7A62D0 /* KanaTraceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A54FB36D5091090F2A9627C /* KanaTraceApp.swift */; };
+		B054977F9852FB014DDAD312 /* StrokeMatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62229FB7C34A851AE5EC2554 /* StrokeMatcherTests.swift */; };
+		B88C6BB7C80B36330EB71EDD /* PracticeSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9243B84F8E38EED886FCBE86 /* PracticeSessionView.swift */; };
+		BFBB8F0A38BB70A0A8204DF6 /* ChartPickerViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B1DA234DC5A53AB8CF45F4 /* ChartPickerViewModelTests.swift */; };
+		C6CE94579D21B495319DD4AB /* Color+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1161A9C3BBE14F39E8E495 /* Color+Theme.swift */; };
+		C92C3E223AD1477291FEC594 /* ChartPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D7173A37E9F078A66D5D75 /* ChartPickerViewModel.swift */; };
+		D4C6975857742A766299A512 /* HiraganaCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314153BECE8AC1FA2EDC0199 /* HiraganaCharacter.swift */; };
+		DA48D95BA8F83FB683331DC2 /* StrokeMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DDF5CCC7E120C38D480BE8 /* StrokeMatcher.swift */; };
+		DD282DA7CF25969C6FD6DDF0 /* PracticeSessionViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300540B8886DE151C8EC3407 /* PracticeSessionViewModelTests.swift */; };
+		DFD7A489141C3ABDBDCA811D /* StrokeCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2377B7326D85A7660C696B80 /* StrokeCatalog.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D02D1E6D247BCE7173DC5B48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42154B2EFBBF3056D6547534 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B65B64E719299E501E3BC4FF;
+			remoteInfo = KanaTrace;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1AFBFD366C365D7CC80FE103 /* WritingCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingCanvas.swift; sourceTree = "<group>"; };
+		2377B7326D85A7660C696B80 /* StrokeCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeCatalog.swift; sourceTree = "<group>"; };
+		2C1161A9C3BBE14F39E8E495 /* Color+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Theme.swift"; sourceTree = "<group>"; };
+		2F6DA3E8D66C245FCF000156 /* HiraganaStrokes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HiraganaStrokes.json; sourceTree = "<group>"; };
+		300540B8886DE151C8EC3407 /* PracticeSessionViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeSessionViewModelTests.swift; sourceTree = "<group>"; };
+		314153BECE8AC1FA2EDC0199 /* HiraganaCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaCharacter.swift; sourceTree = "<group>"; };
+		32C87DA0A224F65B24FCA8BA /* ChartPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartPickerView.swift; sourceTree = "<group>"; };
+		38DDF5CCC7E120C38D480BE8 /* StrokeMatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeMatcher.swift; sourceTree = "<group>"; };
+		4C40A9D01AFC99C4D7DBD727 /* HapticTriggering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticTriggering.swift; sourceTree = "<group>"; };
+		5A54FB36D5091090F2A9627C /* KanaTraceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanaTraceApp.swift; sourceTree = "<group>"; };
+		5D2B82A2D879FC001673109E /* PracticeSessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeSessionViewModel.swift; sourceTree = "<group>"; };
+		62229FB7C34A851AE5EC2554 /* StrokeMatcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeMatcherTests.swift; sourceTree = "<group>"; };
+		640B9F89EDFA120378F3CD8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66B1DA234DC5A53AB8CF45F4 /* ChartPickerViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartPickerViewModelTests.swift; sourceTree = "<group>"; };
+		9243B84F8E38EED886FCBE86 /* PracticeSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeSessionView.swift; sourceTree = "<group>"; };
+		94D7173A37E9F078A66D5D75 /* ChartPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartPickerViewModel.swift; sourceTree = "<group>"; };
+		C9535E4EB21528794D2FE184 /* KanaTraceTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = KanaTraceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBCAFC4E161A805A1171DD97 /* KanaTrace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KanaTrace.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1E2ED63F6B4072F411024E22 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5A54FB36D5091090F2A9627C /* KanaTraceApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		238013C569DA0799DFB69F6C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				314153BECE8AC1FA2EDC0199 /* HiraganaCharacter.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		28D6811B2A08EADE5EED9039 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				640B9F89EDFA120378F3CD8D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		47C19E50423E8568E807832D /* KanaTraceTests */ = {
+			isa = PBXGroup;
+			children = (
+				66B1DA234DC5A53AB8CF45F4 /* ChartPickerViewModelTests.swift */,
+				300540B8886DE151C8EC3407 /* PracticeSessionViewModelTests.swift */,
+				62229FB7C34A851AE5EC2554 /* StrokeMatcherTests.swift */,
+			);
+			path = KanaTraceTests;
+			sourceTree = "<group>";
+		};
+		4B70E0A8D675DC90728AA0BD /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				2C1161A9C3BBE14F39E8E495 /* Color+Theme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		6144843F0D675B2BE650AB78 /* ChartPicker */ = {
+			isa = PBXGroup;
+			children = (
+				32C87DA0A224F65B24FCA8BA /* ChartPickerView.swift */,
+				94D7173A37E9F078A66D5D75 /* ChartPickerViewModel.swift */,
+			);
+			path = ChartPicker;
+			sourceTree = "<group>";
+		};
+		7F23C3E8AC33A25D99F5D6FC /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E802EB444400ED42FD27B47A /* StrokeMatching */,
+				4B70E0A8D675DC90728AA0BD /* Theme */,
+				8448C998FEFC85CC0F073D10 /* Utils */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		8448C998FEFC85CC0F073D10 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4C40A9D01AFC99C4D7DBD727 /* HapticTriggering.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8472D864F0F3E8247CA05D89 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBCAFC4E161A805A1171DD97 /* KanaTrace.app */,
+				C9535E4EB21528794D2FE184 /* KanaTraceTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9667E2DF16A9FCB579D53021 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				238013C569DA0799DFB69F6C /* Models */,
+				2F6DA3E8D66C245FCF000156 /* HiraganaStrokes.json */,
+				2377B7326D85A7660C696B80 /* StrokeCatalog.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C02DBF3785C06F0F6A58B285 /* PracticeSession */ = {
+			isa = PBXGroup;
+			children = (
+				9243B84F8E38EED886FCBE86 /* PracticeSessionView.swift */,
+				5D2B82A2D879FC001673109E /* PracticeSessionViewModel.swift */,
+				1AFBFD366C365D7CC80FE103 /* WritingCanvas.swift */,
+			);
+			path = PracticeSession;
+			sourceTree = "<group>";
+		};
+		E7F7BE616646467F573A5201 /* KanaTrace */ = {
+			isa = PBXGroup;
+			children = (
+				1E2ED63F6B4072F411024E22 /* App */,
+				7F23C3E8AC33A25D99F5D6FC /* Core */,
+				9667E2DF16A9FCB579D53021 /* Data */,
+				F96AC6C3DBA3985961E46CC3 /* Features */,
+				28D6811B2A08EADE5EED9039 /* Resources */,
+			);
+			path = KanaTrace;
+			sourceTree = "<group>";
+		};
+		E802EB444400ED42FD27B47A /* StrokeMatching */ = {
+			isa = PBXGroup;
+			children = (
+				38DDF5CCC7E120C38D480BE8 /* StrokeMatcher.swift */,
+			);
+			path = StrokeMatching;
+			sourceTree = "<group>";
+		};
+		F7713DB066917BBF3DB15EBC = {
+			isa = PBXGroup;
+			children = (
+				E7F7BE616646467F573A5201 /* KanaTrace */,
+				47C19E50423E8568E807832D /* KanaTraceTests */,
+				8472D864F0F3E8247CA05D89 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F96AC6C3DBA3985961E46CC3 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				6144843F0D675B2BE650AB78 /* ChartPicker */,
+				C02DBF3785C06F0F6A58B285 /* PracticeSession */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B65B64E719299E501E3BC4FF /* KanaTrace */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D32E5D549787F73DFCF8B77 /* Build configuration list for PBXNativeTarget "KanaTrace" */;
+			buildPhases = (
+				3E5E5E3B0D8392F04002255C /* Sources */,
+				80413634D386FD6BF7B1474E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KanaTrace;
+			packageProductDependencies = (
+			);
+			productName = KanaTrace;
+			productReference = CBCAFC4E161A805A1171DD97 /* KanaTrace.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D5F5AA43DFAA3023BA73AFD5 /* KanaTraceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63FD843EE074C30E8DCEAFA0 /* Build configuration list for PBXNativeTarget "KanaTraceTests" */;
+			buildPhases = (
+				881454EAE4F31412B0A33649 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C933A39964CD0396D961A44 /* PBXTargetDependency */,
+			);
+			name = KanaTraceTests;
+			packageProductDependencies = (
+			);
+			productName = KanaTraceTests;
+			productReference = C9535E4EB21528794D2FE184 /* KanaTraceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42154B2EFBBF3056D6547534 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+			};
+			buildConfigurationList = 1DC9559D7082F4890E856D5A /* Build configuration list for PBXProject "KanaTrace" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = F7713DB066917BBF3DB15EBC;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 8472D864F0F3E8247CA05D89 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B65B64E719299E501E3BC4FF /* KanaTrace */,
+				D5F5AA43DFAA3023BA73AFD5 /* KanaTraceTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80413634D386FD6BF7B1474E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				383D718A7593F714502D6E98 /* Assets.xcassets in Resources */,
+				54328EB0D62C1FC164828E2B /* HiraganaStrokes.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E5E5E3B0D8392F04002255C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D4A3ED4D62D77C608540081 /* ChartPickerView.swift in Sources */,
+				C92C3E223AD1477291FEC594 /* ChartPickerViewModel.swift in Sources */,
+				C6CE94579D21B495319DD4AB /* Color+Theme.swift in Sources */,
+				36754D45B738C5DBB0A0A4FA /* HapticTriggering.swift in Sources */,
+				D4C6975857742A766299A512 /* HiraganaCharacter.swift in Sources */,
+				9722B6972742AF03AE7A62D0 /* KanaTraceApp.swift in Sources */,
+				B88C6BB7C80B36330EB71EDD /* PracticeSessionView.swift in Sources */,
+				31AC60DAB28F3BC7ED5C1013 /* PracticeSessionViewModel.swift in Sources */,
+				DFD7A489141C3ABDBDCA811D /* StrokeCatalog.swift in Sources */,
+				DA48D95BA8F83FB683331DC2 /* StrokeMatcher.swift in Sources */,
+				547CB8EC6730A3A8D94089CB /* WritingCanvas.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		881454EAE4F31412B0A33649 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFBB8F0A38BB70A0A8204DF6 /* ChartPickerViewModelTests.swift in Sources */,
+				DD282DA7CF25969C6FD6DDF0 /* PracticeSessionViewModelTests.swift in Sources */,
+				B054977F9852FB014DDAD312 /* StrokeMatcherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C933A39964CD0396D961A44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B65B64E719299E501E3BC4FF /* KanaTrace */;
+			targetProxy = D02D1E6D247BCE7173DC5B48 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		074C0481BAC26B3970D15B0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.seanlai.KanaTraceTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KanaTrace.app/KanaTrace";
+			};
+			name = Release;
+		};
+		17052795C569E92C8F959BC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.seanlai.KanaTraceTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KanaTrace.app/KanaTrace";
+			};
+			name = Debug;
+		};
+		5FEEDBF2DA26B88269C0947C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9CC601EA1D846152412F3E95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 76WQV68HBW;
+				ENABLE_TESTABILITY = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = KanaTrace;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.seanlai.KanaTrace;
+				PRODUCT_NAME = KanaTrace;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A6797F0F90F146D8C3E1F8FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 76WQV68HBW;
+				ENABLE_TESTABILITY = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = KanaTrace;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.seanlai.KanaTrace;
+				PRODUCT_NAME = KanaTrace;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		CD53DB6C501CDFFB53F1936E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D32E5D549787F73DFCF8B77 /* Build configuration list for PBXNativeTarget "KanaTrace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CC601EA1D846152412F3E95 /* Debug */,
+				A6797F0F90F146D8C3E1F8FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		1DC9559D7082F4890E856D5A /* Build configuration list for PBXProject "KanaTrace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FEEDBF2DA26B88269C0947C /* Debug */,
+				CD53DB6C501CDFFB53F1936E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		63FD843EE074C30E8DCEAFA0 /* Build configuration list for PBXNativeTarget "KanaTraceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17052795C569E92C8F959BC6 /* Debug */,
+				074C0481BAC26B3970D15B0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 42154B2EFBBF3056D6547534 /* Project object */;
+}
