@@ -16,16 +16,13 @@ final class StrokeMatcherTests: XCTestCase {
 
     func testNoisyCopyOfARowStillMatches() throws {
         for glyph in ["あ", "い", "う", "え", "お"] {
-            let strokes = catalog.strokes(for: glyph)
-            XCTAssertFalse(strokes.isEmpty, glyph)
-            for (index, template) in strokes.enumerated() {
-                let unit = StrokeMatcher.normalizeToUnitSquare(template)
-                let noisy = jitter(unit, amount: 0.03, seed: index + glyph.hashValue)
-                XCTAssertTrue(
-                    StrokeMatcher.matches(user: noisy, template: unit),
-                    "\(glyph) stroke \(index) should match a slightly noisy copy"
-                )
-            }
+            assertNoisyMatches(glyph)
+        }
+    }
+
+    func testNoisyCopyOfKatakanaARowStillMatches() throws {
+        for glyph in ["ア", "イ", "ウ", "エ", "オ"] {
+            assertNoisyMatches(glyph)
         }
     }
 
@@ -39,6 +36,14 @@ final class StrokeMatcherTests: XCTestCase {
         let a = StrokeMatcher.normalizeToUnitSquare(try stroke("あ", 0))
         let i = StrokeMatcher.normalizeToUnitSquare(try stroke("い", 0))
         XCTAssertFalse(StrokeMatcher.matches(user: i, template: a))
+    }
+
+    func testShiDoesNotAcceptTsu() throws {
+        try assertGlyphsDoNotMatch("シ", "ツ")
+    }
+
+    func testSoDoesNotAcceptN() throws {
+        try assertGlyphsDoNotMatch("ソ", "ン")
     }
 
     func testTinyScribbleFails() {
@@ -67,11 +72,43 @@ final class StrokeMatcherTests: XCTestCase {
         XCTAssertEqual(sampled.last?.y ?? -1, 1, accuracy: 0.0001)
     }
 
-    func testCatalogHasFortySixHiragana() {
-        XCTAssertEqual(HiraganaCatalog.all.count, 46)
-        for character in HiraganaCatalog.all {
+    func testCatalogHasFortySixOfEachScript() {
+        XCTAssertEqual(KanaCatalog.all(for: .hiragana).count, 46)
+        XCTAssertEqual(KanaCatalog.all(for: .katakana).count, 46)
+        for character in KanaCatalog.all(for: .hiragana) + KanaCatalog.all(for: .katakana) {
             XCTAssertFalse(catalog.strokes(for: character.glyph).isEmpty, character.glyph)
         }
+    }
+
+    private func assertNoisyMatches(_ glyph: String) {
+        let strokes = catalog.strokes(for: glyph)
+        XCTAssertFalse(strokes.isEmpty, glyph)
+        for (index, template) in strokes.enumerated() {
+            let unit = StrokeMatcher.normalizeToUnitSquare(template)
+            let noisy = jitter(unit, amount: 0.03, seed: index + glyph.hashValue)
+            XCTAssertTrue(
+                StrokeMatcher.matches(user: noisy, template: unit),
+                "\(glyph) stroke \(index) should match a slightly noisy copy"
+            )
+        }
+    }
+
+    private func assertGlyphsDoNotMatch(_ userGlyph: String, _ templateGlyph: String) throws {
+        let userStrokes = catalog.strokes(for: userGlyph)
+        let templateStrokes = catalog.strokes(for: templateGlyph)
+        XCTAssertEqual(userStrokes.count, templateStrokes.count, "\(userGlyph) vs \(templateGlyph) stroke count")
+        var acceptedAll = true
+        for index in userStrokes.indices {
+            let user = StrokeMatcher.normalizeToUnitSquare(userStrokes[index])
+            let template = StrokeMatcher.normalizeToUnitSquare(templateStrokes[index])
+            if !StrokeMatcher.matches(user: user, template: template) {
+                acceptedAll = false
+            }
+        }
+        XCTAssertFalse(
+            acceptedAll,
+            "\(userGlyph) should not be accepted as a complete \(templateGlyph)"
+        )
     }
 
     private func stroke(_ glyph: String, _ index: Int) throws -> [StrokePoint] {

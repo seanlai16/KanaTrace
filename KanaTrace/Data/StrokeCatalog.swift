@@ -14,7 +14,7 @@ struct StrokeCatalog: Sendable {
     }
 
     static func load(from bundle: Bundle) throws -> StrokeCatalog {
-        guard let url = bundle.url(forResource: "HiraganaStrokes", withExtension: "json") else {
+        guard let url = bundle.url(forResource: "KanaStrokes", withExtension: "json") else {
             throw LoadError.missingFile
         }
         let data = try Data(contentsOf: url)

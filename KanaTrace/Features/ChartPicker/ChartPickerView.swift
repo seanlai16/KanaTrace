@@ -2,9 +2,11 @@ import SwiftUI
 
 struct ChartPickerView: View {
     let catalog: StrokeCatalog
-    @AppStorage("selectedHiragana") private var storedSelection = ""
+    @AppStorage("selectedHiragana") private var storedHiragana = ""
+    @AppStorage("selectedKatakana") private var storedKatakana = ""
+    @AppStorage("kanaScript") private var storedScript = KanaScript.hiragana.rawValue
     @State private var model: ChartPickerViewModel
-    @State private var practiceQueue: [HiraganaCharacter]?
+    @State private var practiceQueue: [KanaCharacter]?
 
     init(catalog: StrokeCatalog, selectedIDs: Set<String> = []) {
         self.catalog = catalog
@@ -14,29 +16,32 @@ struct ChartPickerView: View {
     var body: some View {
         NavigationStack {
             VStack(spacing: 0) {
+                scriptPicker
+                    .padding(.horizontal, 16)
+                    .padding(.top, 8)
+                    .padding(.bottom, 12)
+
                 ScrollView {
                     VStack(spacing: 8) {
-                        ForEach(HiraganaCatalog.rows) { row in
+                        ForEach(model.rows) { row in
                             chartRow(row)
                         }
                     }
                     .padding(.horizontal, 16)
-                    .padding(.top, 8)
                     .padding(.bottom, 24)
                 }
 
                 startBar
             }
             .background(Color.paper.ignoresSafeArea())
-            .navigationTitle("Hiragana")
+            .navigationTitle(model.script.title)
             .navigationBarTitleDisplayMode(.inline)
-            .onAppear {
-                if model.selectedIDs.isEmpty, !storedSelection.isEmpty {
-                    model.storedSelection = storedSelection
-                }
+            .onAppear(perform: restorePersistedState)
+            .onChange(of: model.script) { _, script in
+                storedScript = script.rawValue
             }
             .onChange(of: model.selectedIDs) { _, _ in
-                storedSelection = model.storedSelection
+                persistCurrentSelection()
             }
             .fullScreenCover(item: launchBinding) { launch in
                 PracticeSessionView(
@@ -50,6 +55,23 @@ struct ChartPickerView: View {
         .tint(.indigo)
     }
 
+    private var scriptPicker: some View {
+        Picker("Script", selection: scriptBinding) {
+            ForEach(KanaScript.allCases) { script in
+                Text(script.title).tag(script)
+            }
+        }
+        .pickerStyle(.segmented)
+        .accessibilityLabel("Script")
+    }
+
+    private var scriptBinding: Binding<KanaScript> {
+        Binding(
+            get: { model.script },
+            set: { model.script = $0 }
+        )
+    }
+
     private var launchBinding: Binding<PracticeLaunch?> {
         Binding(
             get: {
@@ -61,7 +83,24 @@ struct ChartPickerView: View {
         )
     }
 
-    private func chartRow(_ row: HiraganaRow) -> some View {
+    private func restorePersistedState() {
+        model.restoreSelection(storedHiragana, for: .hiragana)
+        model.restoreSelection(storedKatakana, for: .katakana)
+        if let script = KanaScript(rawValue: storedScript) {
+            model.script = script
+        }
+    }
+
+    private func persistCurrentSelection() {
+        switch model.script {
+        case .hiragana:
+            storedHiragana = model.storedSelection(for: .hiragana)
+        case .katakana:
+            storedKatakana = model.storedSelection(for: .katakana)
+        }
+    }
+
+    private func chartRow(_ row: KanaRow) -> some View {
         HStack(spacing: 6) {
             Button {
                 model.toggle(row: row)
@@ -91,7 +130,7 @@ struct ChartPickerView: View {
         }
     }
 
-    private func characterCell(_ character: HiraganaCharacter) -> some View {
+    private func characterCell(_ character: KanaCharacter) -> some View {
         let selected = model.isSelected(character)
         return Button {
             model.toggle(character)
@@ -146,6 +185,6 @@ struct ChartPickerView: View {
 }
 
 private struct PracticeLaunch: Identifiable {
-    let characters: [HiraganaCharacter]
+    let characters: [KanaCharacter]
     var id: String { characters.map(\.glyph).joined() }
 }

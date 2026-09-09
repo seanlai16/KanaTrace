@@ -11,7 +11,6 @@
 		31AC60DAB28F3BC7ED5C1013 /* PracticeSessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2B82A2D879FC001673109E /* PracticeSessionViewModel.swift */; };
 		36754D45B738C5DBB0A0A4FA /* HapticTriggering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C40A9D01AFC99C4D7DBD727 /* HapticTriggering.swift */; };
 		383D718A7593F714502D6E98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 640B9F89EDFA120378F3CD8D /* Assets.xcassets */; };
-		54328EB0D62C1FC164828E2B /* HiraganaStrokes.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F6DA3E8D66C245FCF000156 /* HiraganaStrokes.json */; };
 		547CB8EC6730A3A8D94089CB /* WritingCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFBFD366C365D7CC80FE103 /* WritingCanvas.swift */; };
 		9722B6972742AF03AE7A62D0 /* KanaTraceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A54FB36D5091090F2A9627C /* KanaTraceApp.swift */; };
 		B054977F9852FB014DDAD312 /* StrokeMatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62229FB7C34A851AE5EC2554 /* StrokeMatcherTests.swift */; };
@@ -19,10 +18,11 @@
 		BFBB8F0A38BB70A0A8204DF6 /* ChartPickerViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B1DA234DC5A53AB8CF45F4 /* ChartPickerViewModelTests.swift */; };
 		C6CE94579D21B495319DD4AB /* Color+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1161A9C3BBE14F39E8E495 /* Color+Theme.swift */; };
 		C92C3E223AD1477291FEC594 /* ChartPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D7173A37E9F078A66D5D75 /* ChartPickerViewModel.swift */; };
-		D4C6975857742A766299A512 /* HiraganaCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314153BECE8AC1FA2EDC0199 /* HiraganaCharacter.swift */; };
+		CD3E1365CC0BA6A7380E339D /* KanaCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502BE3222D21E5F0067DDFA4 /* KanaCharacter.swift */; };
 		DA48D95BA8F83FB683331DC2 /* StrokeMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DDF5CCC7E120C38D480BE8 /* StrokeMatcher.swift */; };
 		DD282DA7CF25969C6FD6DDF0 /* PracticeSessionViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300540B8886DE151C8EC3407 /* PracticeSessionViewModelTests.swift */; };
 		DFD7A489141C3ABDBDCA811D /* StrokeCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2377B7326D85A7660C696B80 /* StrokeCatalog.swift */; };
+		EAA3A90EF7121EA4FDA0CD90 /* KanaStrokes.json in Resources */ = {isa = PBXBuildFile; fileRef = CFECC70C7E8A7717ECF4B167 /* KanaStrokes.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,12 +39,11 @@
 		1AFBFD366C365D7CC80FE103 /* WritingCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingCanvas.swift; sourceTree = "<group>"; };
 		2377B7326D85A7660C696B80 /* StrokeCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeCatalog.swift; sourceTree = "<group>"; };
 		2C1161A9C3BBE14F39E8E495 /* Color+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Theme.swift"; sourceTree = "<group>"; };
-		2F6DA3E8D66C245FCF000156 /* HiraganaStrokes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HiraganaStrokes.json; sourceTree = "<group>"; };
 		300540B8886DE151C8EC3407 /* PracticeSessionViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeSessionViewModelTests.swift; sourceTree = "<group>"; };
-		314153BECE8AC1FA2EDC0199 /* HiraganaCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaCharacter.swift; sourceTree = "<group>"; };
 		32C87DA0A224F65B24FCA8BA /* ChartPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartPickerView.swift; sourceTree = "<group>"; };
 		38DDF5CCC7E120C38D480BE8 /* StrokeMatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeMatcher.swift; sourceTree = "<group>"; };
 		4C40A9D01AFC99C4D7DBD727 /* HapticTriggering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticTriggering.swift; sourceTree = "<group>"; };
+		502BE3222D21E5F0067DDFA4 /* KanaCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanaCharacter.swift; sourceTree = "<group>"; };
 		5A54FB36D5091090F2A9627C /* KanaTraceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanaTraceApp.swift; sourceTree = "<group>"; };
 		5D2B82A2D879FC001673109E /* PracticeSessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeSessionViewModel.swift; sourceTree = "<group>"; };
 		62229FB7C34A851AE5EC2554 /* StrokeMatcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeMatcherTests.swift; sourceTree = "<group>"; };
@@ -53,7 +52,8 @@
 		9243B84F8E38EED886FCBE86 /* PracticeSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeSessionView.swift; sourceTree = "<group>"; };
 		94D7173A37E9F078A66D5D75 /* ChartPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartPickerViewModel.swift; sourceTree = "<group>"; };
 		C9535E4EB21528794D2FE184 /* KanaTraceTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = KanaTraceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBCAFC4E161A805A1171DD97 /* KanaTrace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KanaTrace.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBCAFC4E161A805A1171DD97 /* KanaTrace.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = KanaTrace.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFECC70C7E8A7717ECF4B167 /* KanaStrokes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = KanaStrokes.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -68,7 +68,7 @@
 		238013C569DA0799DFB69F6C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				314153BECE8AC1FA2EDC0199 /* HiraganaCharacter.swift */,
+				502BE3222D21E5F0067DDFA4 /* KanaCharacter.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -139,7 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				238013C569DA0799DFB69F6C /* Models */,
-				2F6DA3E8D66C245FCF000156 /* HiraganaStrokes.json */,
+				CFECC70C7E8A7717ECF4B167 /* KanaStrokes.json */,
 				2377B7326D85A7660C696B80 /* StrokeCatalog.swift */,
 			);
 			path = Data;
@@ -240,6 +240,8 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
 			};
 			buildConfigurationList = 1DC9559D7082F4890E856D5A /* Build configuration list for PBXProject "KanaTrace" */;
 			developmentRegion = en;
@@ -267,7 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				383D718A7593F714502D6E98 /* Assets.xcassets in Resources */,
-				54328EB0D62C1FC164828E2B /* HiraganaStrokes.json in Resources */,
+				EAA3A90EF7121EA4FDA0CD90 /* KanaStrokes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +284,7 @@
 				C92C3E223AD1477291FEC594 /* ChartPickerViewModel.swift in Sources */,
 				C6CE94579D21B495319DD4AB /* Color+Theme.swift in Sources */,
 				36754D45B738C5DBB0A0A4FA /* HapticTriggering.swift in Sources */,
-				D4C6975857742A766299A512 /* HiraganaCharacter.swift in Sources */,
+				CD3E1365CC0BA6A7380E339D /* KanaCharacter.swift in Sources */,
 				9722B6972742AF03AE7A62D0 /* KanaTraceApp.swift in Sources */,
 				B88C6BB7C80B36330EB71EDD /* PracticeSessionView.swift in Sources */,
 				31AC60DAB28F3BC7ED5C1013 /* PracticeSessionViewModel.swift in Sources */,
@@ -418,7 +420,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 76WQV68HBW;
 				ENABLE_TESTABILITY = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = KanaTrace;
@@ -442,7 +443,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 76WQV68HBW;
 				ENABLE_TESTABILITY = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = KanaTrace;

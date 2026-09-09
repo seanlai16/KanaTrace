@@ -8,7 +8,7 @@ struct KanaTraceApp: App {
         do {
             catalog = try StrokeCatalog.load(from: StrokeResources.bundle)
         } catch {
-            fatalError("HiraganaStrokes.json is missing from the app bundle: \(error)")
+            fatalError("KanaStrokes.json is missing from the app bundle: \(error)")
         }
     }
 

@@ -10,7 +10,7 @@ final class PracticeSessionViewModelTests: XCTestCase {
     }
 
     func testHintStaysOnAndAdvancesWithAcceptedStrokes() {
-        let a = HiraganaCatalog.character(glyph: "あ")!
+        let a = KanaCatalog.character(glyph: "あ", script: .hiragana)!
         let model = PracticeSessionViewModel(
             characters: [a],
             catalog: catalog,
@@ -28,7 +28,7 @@ final class PracticeSessionViewModelTests: XCTestCase {
     }
 
     func testRejectedStrokeDoesNotAdvance() {
-        let a = HiraganaCatalog.character(glyph: "あ")!
+        let a = KanaCatalog.character(glyph: "あ", script: .hiragana)!
         let model = PracticeSessionViewModel(
             characters: [a],
             catalog: catalog,
@@ -44,8 +44,8 @@ final class PracticeSessionViewModelTests: XCTestCase {
     }
 
     func testCompletingCharacterRevealsGlyphThenDoneDismisses() {
-        let a = HiraganaCatalog.character(glyph: "あ")!
-        let i = HiraganaCatalog.character(glyph: "い")!
+        let a = KanaCatalog.character(glyph: "あ", script: .hiragana)!
+        let i = KanaCatalog.character(glyph: "い", script: .hiragana)!
         let model = PracticeSessionViewModel(
             characters: [a, i],
             catalog: catalog,
@@ -67,8 +67,8 @@ final class PracticeSessionViewModelTests: XCTestCase {
     }
 
     func testHintResetsOnNextCharacter() {
-        let a = HiraganaCatalog.character(glyph: "あ")!
-        let i = HiraganaCatalog.character(glyph: "い")!
+        let a = KanaCatalog.character(glyph: "あ", script: .hiragana)!
+        let i = KanaCatalog.character(glyph: "い", script: .hiragana)!
         let model = PracticeSessionViewModel(
             characters: [a, i],
             catalog: catalog,

@@ -4,7 +4,7 @@ import Observation
 @MainActor
 @Observable
 final class PracticeSessionViewModel {
-    let characters: [HiraganaCharacter]
+    let characters: [KanaCharacter]
     private let catalog: StrokeCatalog
     private let matcherThresholds: StrokeMatcher.Thresholds
     private let haptics: any HapticTriggering
@@ -20,7 +20,7 @@ final class PracticeSessionViewModel {
     private(set) var canvasSize = (width: 1.0, height: 1.0)
 
     init(
-        characters: [HiraganaCharacter],
+        characters: [KanaCharacter],
         catalog: StrokeCatalog,
         thresholds: StrokeMatcher.Thresholds = StrokeMatcher.Thresholds(),
         haptics: any HapticTriggering = SystemHapticTrigger()
@@ -31,7 +31,7 @@ final class PracticeSessionViewModel {
         self.haptics = haptics
     }
 
-    var current: HiraganaCharacter { characters[index] }
+    var current: KanaCharacter { characters[index] }
 
     var progressLabel: String { "\(index + 1) / \(characters.count)" }
 
