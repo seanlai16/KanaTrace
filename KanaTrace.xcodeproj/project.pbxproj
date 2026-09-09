@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10B9E00E677D881430E9B268 /* TipProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FF413574BE69D8CEC161B4 /* TipProduct.swift */; };
+		287CCB0F9C89A4D78D39ECC6 /* TipStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412129AF168F536A5F0B5401 /* TipStore.swift */; };
 		2D4A3ED4D62D77C608540081 /* ChartPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C87DA0A224F65B24FCA8BA /* ChartPickerView.swift */; };
 		31AC60DAB28F3BC7ED5C1013 /* PracticeSessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2B82A2D879FC001673109E /* PracticeSessionViewModel.swift */; };
 		36754D45B738C5DBB0A0A4FA /* HapticTriggering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C40A9D01AFC99C4D7DBD727 /* HapticTriggering.swift */; };
 		383D718A7593F714502D6E98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 640B9F89EDFA120378F3CD8D /* Assets.xcassets */; };
+		3F742094AFD5579360B2E2C3 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CA0A76748F4221790DDC9A2 /* StoreKit.framework */; };
 		547CB8EC6730A3A8D94089CB /* WritingCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFBFD366C365D7CC80FE103 /* WritingCanvas.swift */; };
 		9722B6972742AF03AE7A62D0 /* KanaTraceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A54FB36D5091090F2A9627C /* KanaTraceApp.swift */; };
 		B054977F9852FB014DDAD312 /* StrokeMatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62229FB7C34A851AE5EC2554 /* StrokeMatcherTests.swift */; };
@@ -22,7 +25,10 @@
 		DA48D95BA8F83FB683331DC2 /* StrokeMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DDF5CCC7E120C38D480BE8 /* StrokeMatcher.swift */; };
 		DD282DA7CF25969C6FD6DDF0 /* PracticeSessionViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300540B8886DE151C8EC3407 /* PracticeSessionViewModelTests.swift */; };
 		DFD7A489141C3ABDBDCA811D /* StrokeCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2377B7326D85A7660C696B80 /* StrokeCatalog.swift */; };
+		E7651A91EBEBA47042CBEC62 /* TipJarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F20AEAC352EC6A95954493B /* TipJarView.swift */; };
 		EAA3A90EF7121EA4FDA0CD90 /* KanaStrokes.json in Resources */ = {isa = PBXBuildFile; fileRef = CFECC70C7E8A7717ECF4B167 /* KanaStrokes.json */; };
+		F5202674EBEFA0DCA9FB1884 /* TipStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39190AF11B52E0F0E702832 /* TipStoreTests.swift */; };
+		F95790F91E5A4A631D019FFB /* StoreKitTipPurchasing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4BB5B5BD636B11B58B2204 /* StoreKitTipPurchasing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,12 +42,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01FF413574BE69D8CEC161B4 /* TipProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipProduct.swift; sourceTree = "<group>"; };
 		1AFBFD366C365D7CC80FE103 /* WritingCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingCanvas.swift; sourceTree = "<group>"; };
 		2377B7326D85A7660C696B80 /* StrokeCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeCatalog.swift; sourceTree = "<group>"; };
 		2C1161A9C3BBE14F39E8E495 /* Color+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Theme.swift"; sourceTree = "<group>"; };
 		300540B8886DE151C8EC3407 /* PracticeSessionViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeSessionViewModelTests.swift; sourceTree = "<group>"; };
 		32C87DA0A224F65B24FCA8BA /* ChartPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartPickerView.swift; sourceTree = "<group>"; };
 		38DDF5CCC7E120C38D480BE8 /* StrokeMatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeMatcher.swift; sourceTree = "<group>"; };
+		412129AF168F536A5F0B5401 /* TipStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipStore.swift; sourceTree = "<group>"; };
 		4C40A9D01AFC99C4D7DBD727 /* HapticTriggering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticTriggering.swift; sourceTree = "<group>"; };
 		502BE3222D21E5F0067DDFA4 /* KanaCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanaCharacter.swift; sourceTree = "<group>"; };
 		5A54FB36D5091090F2A9627C /* KanaTraceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanaTraceApp.swift; sourceTree = "<group>"; };
@@ -49,12 +57,28 @@
 		62229FB7C34A851AE5EC2554 /* StrokeMatcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeMatcherTests.swift; sourceTree = "<group>"; };
 		640B9F89EDFA120378F3CD8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66B1DA234DC5A53AB8CF45F4 /* ChartPickerViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartPickerViewModelTests.swift; sourceTree = "<group>"; };
+		6F4BB5B5BD636B11B58B2204 /* StoreKitTipPurchasing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitTipPurchasing.swift; sourceTree = "<group>"; };
+		7CA0A76748F4221790DDC9A2 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		9243B84F8E38EED886FCBE86 /* PracticeSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeSessionView.swift; sourceTree = "<group>"; };
 		94D7173A37E9F078A66D5D75 /* ChartPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartPickerViewModel.swift; sourceTree = "<group>"; };
+		9F20AEAC352EC6A95954493B /* TipJarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipJarView.swift; sourceTree = "<group>"; };
+		B39190AF11B52E0F0E702832 /* TipStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipStoreTests.swift; sourceTree = "<group>"; };
 		C9535E4EB21528794D2FE184 /* KanaTraceTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = KanaTraceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBCAFC4E161A805A1171DD97 /* KanaTrace.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = KanaTrace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFECC70C7E8A7717ECF4B167 /* KanaStrokes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = KanaStrokes.json; sourceTree = "<group>"; };
+		FD6D76333DB05496B7E4552E /* Configuration.storekit */ = {isa = PBXFileReference; path = Configuration.storekit; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58A6FB0C25A52BDB960BE0A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F742094AFD5579360B2E2C3 /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		1E2ED63F6B4072F411024E22 /* App */ = {
@@ -87,6 +111,7 @@
 				66B1DA234DC5A53AB8CF45F4 /* ChartPickerViewModelTests.swift */,
 				300540B8886DE151C8EC3407 /* PracticeSessionViewModelTests.swift */,
 				62229FB7C34A851AE5EC2554 /* StrokeMatcherTests.swift */,
+				B39190AF11B52E0F0E702832 /* TipStoreTests.swift */,
 			);
 			path = KanaTraceTests;
 			sourceTree = "<group>";
@@ -145,6 +170,17 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		AD87BABE908C4CA51D2528B2 /* TipJar */ = {
+			isa = PBXGroup;
+			children = (
+				6F4BB5B5BD636B11B58B2204 /* StoreKitTipPurchasing.swift */,
+				9F20AEAC352EC6A95954493B /* TipJarView.swift */,
+				01FF413574BE69D8CEC161B4 /* TipProduct.swift */,
+				412129AF168F536A5F0B5401 /* TipStore.swift */,
+			);
+			path = TipJar;
+			sourceTree = "<group>";
+		};
 		C02DBF3785C06F0F6A58B285 /* PracticeSession */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +199,7 @@
 				9667E2DF16A9FCB579D53021 /* Data */,
 				F96AC6C3DBA3985961E46CC3 /* Features */,
 				28D6811B2A08EADE5EED9039 /* Resources */,
+				FD6D76333DB05496B7E4552E /* Configuration.storekit */,
 			);
 			path = KanaTrace;
 			sourceTree = "<group>";
@@ -175,11 +212,20 @@
 			path = StrokeMatching;
 			sourceTree = "<group>";
 		};
+		EE591BDE329DA3153998CDBF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CA0A76748F4221790DDC9A2 /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F7713DB066917BBF3DB15EBC = {
 			isa = PBXGroup;
 			children = (
 				E7F7BE616646467F573A5201 /* KanaTrace */,
 				47C19E50423E8568E807832D /* KanaTraceTests */,
+				EE591BDE329DA3153998CDBF /* Frameworks */,
 				8472D864F0F3E8247CA05D89 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -189,6 +235,7 @@
 			children = (
 				6144843F0D675B2BE650AB78 /* ChartPicker */,
 				C02DBF3785C06F0F6A58B285 /* PracticeSession */,
+				AD87BABE908C4CA51D2528B2 /* TipJar */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -202,6 +249,7 @@
 			buildPhases = (
 				3E5E5E3B0D8392F04002255C /* Sources */,
 				80413634D386FD6BF7B1474E /* Resources */,
+				58A6FB0C25A52BDB960BE0A1 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -288,8 +336,12 @@
 				9722B6972742AF03AE7A62D0 /* KanaTraceApp.swift in Sources */,
 				B88C6BB7C80B36330EB71EDD /* PracticeSessionView.swift in Sources */,
 				31AC60DAB28F3BC7ED5C1013 /* PracticeSessionViewModel.swift in Sources */,
+				F95790F91E5A4A631D019FFB /* StoreKitTipPurchasing.swift in Sources */,
 				DFD7A489141C3ABDBDCA811D /* StrokeCatalog.swift in Sources */,
 				DA48D95BA8F83FB683331DC2 /* StrokeMatcher.swift in Sources */,
+				E7651A91EBEBA47042CBEC62 /* TipJarView.swift in Sources */,
+				10B9E00E677D881430E9B268 /* TipProduct.swift in Sources */,
+				287CCB0F9C89A4D78D39ECC6 /* TipStore.swift in Sources */,
 				547CB8EC6730A3A8D94089CB /* WritingCanvas.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +353,7 @@
 				BFBB8F0A38BB70A0A8204DF6 /* ChartPickerViewModelTests.swift in Sources */,
 				DD282DA7CF25969C6FD6DDF0 /* PracticeSessionViewModelTests.swift in Sources */,
 				B054977F9852FB014DDAD312 /* StrokeMatcherTests.swift in Sources */,
+				F5202674EBEFA0DCA9FB1884 /* TipStoreTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

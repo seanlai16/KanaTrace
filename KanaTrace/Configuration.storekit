@@ -1,0 +1,64 @@
+{
+  "identifier" : "8F3E2A1C-9B47-4D6E-A0C1-7E5B2D8F4101",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "0.99",
+      "familyShareable" : false,
+      "internalID" : "B7C1D2E3-4F50-4162-8A9B-11C0FFEE0001",
+      "localizations" : [
+        {
+          "description" : "A small optional tip. Practice stays free.",
+          "displayName" : "Coffee",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.seanlai.KanaTrace.tip.coffee",
+      "referenceName" : "Coffee",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "2.99",
+      "familyShareable" : false,
+      "internalID" : "B7C1D2E3-4F50-4162-8A9B-11A77E000002",
+      "localizations" : [
+        {
+          "description" : "A medium optional tip. Practice stays free.",
+          "displayName" : "Latte",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.seanlai.KanaTrace.tip.latte",
+      "referenceName" : "Latte",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "4.99",
+      "familyShareable" : false,
+      "internalID" : "B7C1D2E3-4F50-4162-8A9B-11B4C4000003",
+      "localizations" : [
+        {
+          "description" : "A larger optional tip. Practice stays free.",
+          "displayName" : "Lunch",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.seanlai.KanaTrace.tip.lunch",
+      "referenceName" : "Lunch",
+      "type" : "Consumable"
+    }
+  ],
+  "settings" : {
+    "_failTransactionsEnabled" : false,
+    "_storeKitError" : 0
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 3,
+    "minor" : 0
+  }
+}

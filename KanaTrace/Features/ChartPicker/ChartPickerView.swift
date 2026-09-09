@@ -7,6 +7,8 @@ struct ChartPickerView: View {
     @AppStorage("kanaScript") private var storedScript = KanaScript.hiragana.rawValue
     @State private var model: ChartPickerViewModel
     @State private var practiceQueue: [KanaCharacter]?
+    @State private var showTipJar = false
+    @State private var showThanks = false
 
     init(catalog: StrokeCatalog, selectedIDs: Set<String> = []) {
         self.catalog = catalog
@@ -36,12 +38,32 @@ struct ChartPickerView: View {
             .background(Color.paper.ignoresSafeArea())
             .navigationTitle(model.script.title)
             .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        showTipJar = true
+                    } label: {
+                        Image(systemName: "cup.and.saucer")
+                    }
+                    .accessibilityLabel("Buy me a coffee")
+                }
+            }
             .onAppear(perform: restorePersistedState)
             .onChange(of: model.script) { _, script in
                 storedScript = script.rawValue
             }
             .onChange(of: model.selectedIDs) { _, _ in
                 persistCurrentSelection()
+            }
+            .sheet(isPresented: $showTipJar) {
+                TipJarView {
+                    showThanks = true
+                }
+            }
+            .alert("Thank you", isPresented: $showThanks) {
+                Button("OK", role: .cancel) {}
+            } message: {
+                Text("The tip helps keep KanaTrace free and ad-free.")
             }
             .fullScreenCover(item: launchBinding) { launch in
                 PracticeSessionView(
